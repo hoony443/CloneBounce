@@ -1,6 +1,153 @@
-
+/* 모바일 - 767px 이하 */
 #footer {
-    clear:both;
-    padding:1.5%;
+    clear: both;
+    margin-top: 10%;
     border: 0.1em #1100ff solid;
+} 
+
+.reviews {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto-Medium";
+}
+
+.askQ {
+    width: 100%;
+    margin-top: 7px;
+    text-transform: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    height: 48px;
+    line-height: 48px;
+    min-width: 110px;
+    max-width: 100%;
+    font-family: "Roboto-Medium";
+    font-weight: 400;
+    font-size: 1.2em;
+    box-shadow: rgba(31, 54, 204, 0.2) 0px 6px 18px 0px;
+    overflow: visible;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    background: rgb(31, 54, 204);
+    border-radius: 5px;
+    padding: 0px 30px;
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.copyright{
+    margin: 0;
+    text-align: center;
+    font-size: 8px;
+    font-family: "Roboto-light";
+}
+
+
+
+/* 태블릿 - 768px 이상 */
+@media all and (min-width:768px) {
+#footer {
+    clear: both;
+    margin-top: 10%;
+    border: 0.1em #1100ff solid;
+} 
+
+.reviews {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "Roboto-Medium";
+}
+
+.askQ {
+    width: 100%;
+    margin-top: 1.5%;
+    text-transform: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    line-height: 48px;
+    min-width: 110px;
+    max-width: 100%;
+    font-family: "Roboto-Medium";
+    font-weight: 400;
+    font-size: 1.2em;
+    box-shadow: rgba(31, 54, 204, 0.2) 0px 6px 18px 0px;
+    overflow: visible;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    background: rgb(31, 54, 204);
+    border-radius: 5px;
+    padding: 0px 30px;
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.copyright{
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto-light";
+}
+}
+
+
+/* PC - 992px 이상 */
+@media all and (min-width:992px) {
+#footer {
+    clear: both;
+    margin-top: 10%;
+    border: 0.1em #1100ff solid;
+} 
+
+.reviews {
+    text-align: center;
+    font-size: 1.7em;
+    font-family: "Roboto-Medium";
+}
+
+.askQ {
+    width: 100%;
+    margin-top: 1%;
+    text-transform: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    height: 80px;
+    line-height: 48px;
+    min-width: 110px;
+    max-width: 100%;
+    font-family: "Roboto-Medium";
+    font-weight: 400;
+    font-size: 1.2em;
+    box-shadow: rgba(31, 54, 204, 0.2) 0px 6px 18px 0px;
+    overflow: visible;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    background: rgb(31, 54, 204);
+    border-radius: 5px;
+    padding: 0px 30px;
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.copyright{
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Roboto-light";
+}
 }

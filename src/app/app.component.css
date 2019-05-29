@@ -1,37 +1,94 @@
+/* 모바일 - 767px 이하 */
 
-
-#container {
-    position:relative;
-    width: 96%;
-    /* padding:20px; */
-    margin: 0 auto;
-    border: 0.1em #ff6a00 solid;
+header {
+  border: 0.1em #1100ff solid;
 }
 
-#header {
+.header_contents {
+    position: relative;
     padding:3%;
-    overflow: hidden;
     margin-bottom:30px;
-    border: 0.1em #1100ff solid;
 }
 
-.header-box {
-    position:absolute;
-    /* width:50px;
-    height:50px;
-    background:black; */
+.header-logo {
+    display: inline-block;
+    position: absolute;
+    margin-left: 3%;
+    left: 5px;
 }
 
-#header-logo {
-    top: 30px;
-    left: 20px;
+.header-menu {
+    display: inline-block;
+    position: absolute;
+    margin-right: 3%;
+    right: 5px;
+} 
+
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+    .navact {display: none;}
 }
 
-#header-menu {
-    top: 30px;
-    right: 30px;
+@media all and (min-width: 768px) {
+    .hiddenmenu {display: none;}
 }
 
-@media all and (max-width: 960px) {
-    .wrap {width: 100%;}
-}
+
+
+
+  /* 태블릿 - 768px 이상 */
+@media all and (min-width:768px) {
+  
+  .header-logo {
+      display: inline-block;
+      position: absolute;
+      margin-left: 3%;
+      left: 5px;
+  }
+
+  .header-menu {
+    margin-left: 13%;
+    position: relative;
+    width: 100%;
+    clear: both;
+    /* background: blue; */
+  } 
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 1.7rem;
+    font-family: 'OpenSans-Regular';
+    }     
+  }
+
+
+
+
+
+  
+  /* PC - 992px 이상 */
+  @media all and (min-width:992px) {
+    .header-logo {
+      display: inline-block;
+      position: absolute;
+      margin-left: 3%;
+      left: 5px;
+  }
+
+  .header-menu {
+    margin-left: 15%;
+    position: relative;
+    width: 100%;
+    clear: both;
+    /* background: blue; */
+  } 
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 2.5rem;
+    font-family: 'OpenSans-Regular';
+    }
+  
+  }
