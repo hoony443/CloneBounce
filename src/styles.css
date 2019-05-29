@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(assets/fonts/Roboto/Roboto-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: 'OpenSans-Light';
+    src: url(assets/fonts/Open_Sans/OpenSans-Light.ttf);
+  }
+
+  @font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+  }
+
+
+  @font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(assets/fonts/Open_Sans/OpenSans-Bold.ttf);
+  }
