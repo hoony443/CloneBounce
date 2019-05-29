@@ -1,51 +1,122 @@
-
-/* .main-body1 {
-    font-family: Roboto-Medium;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: normal;
-    align-items: normal;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: column;
-    box-sizing: border-box;
-    height: 100%;
-    max-width: 1140px;
-    flex: initial;
-} */
-
+/* 모바일 - 767px 이하 */
 .contents {
     box-sizing: border-box;
-    width: 52%; 
-    padding: 8%;
-    float: left;
+    width: 100%;
+    margin-top: 20%;
     margin-bottom: 10%;
     display: inline-block;
     border: 0.1em #1100ff solid;
 }
-
+ 
 .contents .main {
+    text-align: center;
     font-family: 'Roboto-Medium';
-    font-size: 35px;
+    font-size: 2.5em;
 }
 
 .contents .sub {
+    text-align: center;
     font-family: 'OpenSans-Light';
-    font-size: 17px;
+    font-size: 1.1em;
 }
 
 #sidebar {
     box-sizing: border-box;
-    width: 48%;
-    padding: 5%;
-    float: right;
-    /* margin-right: 1.5%; */
+    width: 100%;
+    height: 100%;
     margin-bottom: 10%;
     border: 0.1em #1100ff solid;
 }
 
-@media all and (max-width: 960px) {
-    .m {width: 50%;}
-    .s {width: 50%;}
+#sidebar img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* 태블릿 - 768px 이상 */
+@media all and (min-width:768px) {
+    .contents {
+        box-sizing: border-box;
+        width: 58%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 2%;
+        display: inline-block;
+        border: 0.1em #1100ff solid;
+    }
+     
+    .contents .main {
+        text-align: left;
+        font-family: 'Roboto-Medium';
+        font-size: 3.0em;
+    }
+    
+    .contents .sub {
+        text-align: left;
+        font-family: 'OpenSans-Light';
+        font-size: 1.2em;
+    }
+    
+    #sidebar {
+        position: relative;
+        top: -172px;
+        box-sizing: border-box;
+        width: 42%;
+        height: 400px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 2%;
+        display: inline-block;
+        border: 0.1em #1100ff solid;
+    }
+    
+     #sidebar img {
+        max-width: 100%;
+        max-height: 100%;
+    } 
+}
+
+
+/* PC - 992px 이상 */
+@media all and (min-width:992px) {
+    .contents {
+        box-sizing: border-box;
+        width: 56%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding: 10%;
+        display: inline-block;
+        border: 0.1em #1100ff solid;
+    }
+     
+    .contents .main {
+        text-align: left;
+        font-family: 'Roboto-Medium';
+        font-size: 3.3em;
+    }
+    
+    .contents .sub {
+        text-align: left;
+        font-family: 'OpenSans-Light';
+        font-size: 1.2em;
+    }
+    
+    #sidebar {
+        position: relative;
+        top: -115px;
+        box-sizing: border-box;
+        width: 42%;
+        height: 570px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 2%;
+        display: inline-block;
+        border: 0.1em #1100ff solid;
+    }
+    
+     #sidebar img {
+        max-width: 100%;
+        max-height: 100%;
+  }
 }

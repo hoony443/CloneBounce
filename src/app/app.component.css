@@ -1,37 +1,116 @@
 
-
-#container {
-    position:relative;
-    width: 96%;
-    /* padding:20px; */
-    margin: 0 auto;
-    border: 0.1em #ff6a00 solid;
-}
-
-#header {
+.header_contents {
+    position: relative;
     padding:3%;
-    overflow: hidden;
     margin-bottom:30px;
     border: 0.1em #1100ff solid;
 }
 
-.header-box {
-    position:absolute;
-    /* width:50px;
-    height:50px;
-    background:black; */
+.header-logo {
+    display: inline-block;
+    position: absolute;
+    margin-left: 3%;
+    left: 5px;
 }
 
-#header-logo {
-    top: 30px;
-    left: 20px;
+.header-menu {
+    display: inline-block;
+    position: absolute;
+    margin-right: 3%;
+    right: 5px;
+} 
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+    .navact {display: none;}
 }
 
-#header-menu {
-    top: 30px;
-    right: 30px;
+@media all and (min-width: 768px) {
+    .hiddenmenu {display: none;}
 }
 
-@media all and (max-width: 960px) {
-    .wrap {width: 100%;}
-}
+
+
+
+/* 모바일 - 767px 이하 */
+nav ul li {
+    display: inline-block;
+    margin-left: 17%;
+    font-size: 1.2rem;
+  } 
+  
+  header {
+    width: 100%;
+    margin: 0;
+  }
+  
+  #head_container, nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #intro {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #intro img {
+    max-width: 100%;
+  }
+  #desc {
+    width: 100%;
+    padding: 10px;
+  }
+  footer {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background: black;
+    color: white;
+  }
+  footer p {
+    text-align: center;
+  }
+  
+  
+  /* 태블릿 - 768px 이상 */
+  @media all and (min-width:768px) {
+    #head_container, nav{
+        width: 750px;
+        margin: 0 auto;
+    }
+    #intro {
+        width: 100%;
+    }
+    #desc {
+        width: 100%;
+        padding: 0px;
+        margin: 10px auto;
+    }
+    footer {
+        width: 100%;
+        background: black;
+        background-size: cover;
+    }
+  }
+  
+  /* PC - 992px 이상 */
+  @media all and (min-width:992px) {
+    #head_container, nav{
+        width: 992px;
+        margin: 0 auto;
+    }
+    #desc {
+        width: 250px;
+        height: 200px;
+        padding: 5px;
+        border: 1px dotted #ccc;
+    }
+    footer {
+        height: 200px;
+        background: black;
+        background-size: cover;
+    }
+    footer p {
+        line-height: 200px;
+    }
+  }
